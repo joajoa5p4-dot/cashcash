@@ -127,6 +127,9 @@ body{margin:0;background:#001372}
 .pic.ok{background:#0062ff}
 .pic.no{background:#ffb600}
 .pic.in{background:#001372}
+/* 배포용: PC 화면 너비에 맞춰 늘어나고 가운데 정렬 */
+.cq{max-width:2200px;margin:0 auto}
+.app{width:100%!important}
 </style>
 </helmet>
 
@@ -284,7 +287,7 @@ body{margin:0;background:#001372}
 </div>
 </sc-if>
 
-<sc-if value="{{showAcctXls}}" hint-placeholder-val="{{ false }}"><button class="xbtn" style="left: 1349px; position: absolute; top: 124px" onClick="{{downAcct}}">엑셀 다운로드</button><label class="xbtn" style="left: 1217px; position: absolute; top: 123px"><span>엑셀 업로드</span><input type="file" accept=".xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" onChange="{{pickAcct}}" aria-label="사원 계정 엑셀 업로드"></label></sc-if></div>
+<sc-if value="{{showAcctXls}}" hint-placeholder-val="{{ false }}"><button class="xbtn" style="left:calc(1908.4*var(--u));position:absolute;top:calc(175.4*var(--u))" onClick="{{downAcct}}">엑셀 다운로드</button><label class="xbtn" style="left:calc(1721.6*var(--u));position:absolute;top:calc(174*var(--u))"><span>엑셀 업로드</span><input type="file" accept=".xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" onChange="{{pickAcct}}" aria-label="사원 계정 엑셀 업로드"></label></sc-if></div>
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props='{"simulateFail":{"editor":"boolean","default":false,"section":"테스트"},"$preview":{"width":1500,"height":1313}}'>
